@@ -1,32 +1,41 @@
+import Sidebar from "../../components/Sidebar";
 import studentsinfos from "../../data/Studentsinfo";
+import "../css/StudentTable.css";
 
-function StudentTable(){
-
-
+function StudentTable() {
     return (
-        <div> 
-            <table>
-                <thead>
-                    <th>student name</th>
-                    <th>Student regno</th>
-                    <th>stdent age</th>
-                </thead>
-                <tbody>
-                    {studentsinfos.map((studentinfo)=>(
-                        <tr key={studentinfo.id}>
-                            <td>{studentinfo.name}</td>
-                            <td>{studentinfo.regno}</td>
-                            <td>{studentinfo.age}</td>
-                        </tr>
-                    ))
+        <div className="page">
 
-                    }
-                    <tr >
-                        
-                    </tr>
-                </tbody>
-            </table>
+            <Sidebar />
+
+            <div className="tablecss">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student Reg No</th>
+                            <th>Student Age</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {studentsinfos.map((studentinfo) => (
+                            <tr key={studentinfo.id}>
+                                <td>{studentinfo.name}</td>
+                                <td>{studentinfo.regno}</td>
+                                <td>{studentinfo.age}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+
+                </table>
+
+            </div>
+
         </div>
     );
-};
+}
+
 export default StudentTable;

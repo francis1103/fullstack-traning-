@@ -4,15 +4,26 @@ import "../../pages/css/DeleteStudents.css";
 function DeleteStudents(){
     const [name,setName]=useState("");
     return (
+    <div className="page">
 
-        
-        <div className="delete-student"> 
-            <Sidebar />
-            <h1>delete students</h1>
-            <input type ="text" placeholder="Enter your name " value={name} onChange={(e)=>setName(e.target.value)} />
-            <button >delete</button>
+        <Sidebar />
+
+        <div className="delete-student">
+
+            <h1>Delete Students</h1>
+
+            <input
+                type="text"
+                placeholder="Enter your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+            />
+
+            <button>Delete</button>
 
         </div>
-    );
+
+    </div>
+);
 }
 export default DeleteStudents;

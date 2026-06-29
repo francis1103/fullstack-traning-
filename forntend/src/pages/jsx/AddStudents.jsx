@@ -20,9 +20,14 @@ function AddStudent(){
         
 
     return (
-            <div className="student-form">
-            <Sidebar />
-            <h2>add students</h2>
+    <div className="page">
+
+        <Sidebar />
+
+        <div className="student-form">
+
+            <h2>Add Students</h2>
+
             <input
                 type="text"
                 name="name"
@@ -51,9 +56,9 @@ function AddStudent(){
                 Add Student
             </button>
 
-
         </div>
 
-    );
+    </div>
+);
 }
 export default AddStudent;

@@ -1,8 +1,17 @@
-function Sidebar(){
+import "../pages/css/Sidebar.css";
+
+function Sidebar() {
     return (
-     <div> 
-        <h1> SIDEBAR</h1>
-     </div>
+        <div className="sidebar">
+            <h2>Menu</h2>
+            
+                <p className="active" >Add Student</p>
+
+                <p className="active">Delete Student</p>
+
+                <p className="active">Student Table</p>
+            </div>
+        
     );
 }
 

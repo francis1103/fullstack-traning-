@@ -1,3 +1,6 @@
+.page {
+    display: flex;
+}
 .student-form {
     width: 300px;
     margin: 50px auto;

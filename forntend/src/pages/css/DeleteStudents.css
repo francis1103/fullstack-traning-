@@ -1,3 +1,6 @@
+.page {
+    display: flex;
+}
 .delete-student {
     width: 300px;
     margin: 50px auto;
