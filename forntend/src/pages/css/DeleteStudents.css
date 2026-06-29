@@ -1,0 +1,22 @@
+.delete-student {
+    width: 300px;
+    margin: 50px auto;
+    
+}
+
+.delete-student h1 {
+    text-align: center;
+}
+
+.delete-student input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.delete-student button {
+    width: 100%;
+    padding: 8px;
+    color: black;
+}

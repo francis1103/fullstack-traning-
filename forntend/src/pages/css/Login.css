@@ -1,0 +1,23 @@
+.login {
+    width: 300px;
+    margin: 50px auto;
+    background-color: blanchedalmond;
+}
+
+.login h1 {
+    text-align: center;
+}
+
+.login input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.login button {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
