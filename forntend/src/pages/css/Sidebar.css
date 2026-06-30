@@ -3,6 +3,7 @@
     height: 100vh;
     background-color: lightgray;
     padding: 20px;
+    cursor: pointer;
 }
 
 .sidebar h2 {

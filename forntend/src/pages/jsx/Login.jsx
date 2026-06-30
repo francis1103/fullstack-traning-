@@ -4,31 +4,28 @@ import DeleteStudents from "./DeleteStudents";
 import AddStudent from "./AddStudents";
 import "../../pages/css/Login.css";
 import StudentTable from "./StudentTable";
+import {useNavigate} from "react-router-dom";
 function Login() {
   const [formdata, setformdata] = useState({
     Email: "",
-    Password: "",
-    no: "80722222",
-    add: "",
-    roll_no: "",
+    Password: ""
   });
   const onChange1 = (e) => {
     setformdata({ 
         ...formdata,
         [e.target.name]: e.target.value });
   };
+  const navigate=useNavigate();
   const handelSubmit=(e)=>{
     e.preventDefault();
     console.log(formdata);
-  }
-  const details={
-            id:0,
-            name:"francis",
-            age:20,
-            address:"tamilnadu"
-        }
-    console.log(details);
-  console.log(formdata);
+    
+    if(formdata.Email=="francis@gmail.com" && formdata.Password=="123")
+    navigate("/studentstable");
+    
+    
+  };
+  
   return (
     <div className="login">
       
@@ -41,6 +38,7 @@ function Login() {
           required
           name="Email"
           onChange={onChange1}
+          
         />
         <input
           type="password"
@@ -49,8 +47,8 @@ function Login() {
           name="Password"
           onChange={onChange1}
         />
-        <input type="text" placeholder="Enter your address" name="add" onChange={onChange1} />
-        <button type="submit" >Login</button> 
+        
+        <button type="submit"  >Login</button> 
           
 
         
