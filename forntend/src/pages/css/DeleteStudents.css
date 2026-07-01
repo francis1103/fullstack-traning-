@@ -1,9 +1,13 @@
 .page {
     display: flex;
+    background-color: #aaa;
 }
 .delete-student {
     width: 300px;
     margin: 50px auto;
+    
+    padding: 20px;
+    
     
 }
 
@@ -16,10 +20,26 @@
     padding: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
 }
 
 .delete-student button {
-    width: 100%;
-    padding: 8px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
     color: black;
+    background-color: #aaa;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    
+}
+
+.delete-student button:hover {
+    background-color: #b0b0b0;
+    color: blue;
 }

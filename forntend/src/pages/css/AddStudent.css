@@ -1,9 +1,17 @@
 .page {
-    display: flex;
+    
+    background-color: #777;
 }
 .student-form {
-    width: 300px;
+    
     margin: 50px auto;
+    
+    
+    padding: 20px;
+    border-radius: 10px;
+    
+    
+    
 }
 
 .student-form h2 {
@@ -15,10 +23,29 @@
     padding: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+    
 }
 
 .student-form button {
-    width: 100%;
-    padding: 8px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
     color: black;
+    background-color: #ccc;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.student-form button:hover {
+    background-color: #b0b0b0;
+    color: blue;
 }

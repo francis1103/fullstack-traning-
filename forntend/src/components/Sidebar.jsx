@@ -5,7 +5,7 @@ function Sidebar() {
     const navigate=useNavigate();
     return (
         <div className="sidebar">
-            <h2>Menu</h2>
+            <h2>Sidebar</h2>
                 
                 <p onClick={()=>navigate("/addstudents")}>Add Student</p>
 

@@ -27,9 +27,12 @@ function Login() {
   };
   
   return (
+    <div className="page">
+
+    
     <div className="login">
       
-        
+      <div> 
       <h1>Login</h1>
       <form onSubmit={handelSubmit}>
         <input
@@ -50,9 +53,11 @@ function Login() {
         
         <button type="submit"  >Login</button> 
           
-
+        
         
       </form>
+      </div>
+    </div>
     </div>
     
   );
